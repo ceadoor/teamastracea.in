@@ -1,0 +1,103 @@
+.menu {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  height: 46px;
+	width: 46px;
+}
+
+.menu-circle {
+  background-color: #000;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  border-radius: 50%;
+  transition: all 0.5s cubic-bezier(0.19, 1, 0.22, 1);
+  z-index: 1000;
+}
+
+.menu:hover .menu-circle {
+  transform: scale(1.5);
+}
+
+.menu.open .menu-circle {
+  transform: scale(60);
+}
+
+.menu-link {
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	z-index: 1002;
+}
+
+.menu-icon {
+	position: absolute;
+  width: 20px;
+  height: 14px;
+  margin: auto;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 1px;
+}
+
+.menu-line {
+  background-color: #fff;
+  height: 2px;
+  width: 100%;
+  border-radius: 2px;
+  position: absolute;
+  left: 0;
+  transition: all 0.25s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.menu-line-1 { top: 0; }
+
+.menu-line-2 {
+  top: 0;
+  bottom: 0;
+  margin: auto;
+}
+
+.menu-line-3 { bottom: 0; }
+
+.menu.open .menu-line-1 {
+  transform: translateY(7px) translateY(-50%) rotate(-135deg);
+}
+
+.menu.open .menu-line-2 {
+  opacity: 0;
+}
+
+.menu.open .menu-line-3 {
+  transform: translateY(-7px) translateY(50%) rotate(135deg);
+}
+
+.menu-overlay {
+  background-color: #000;
+  color: #fff;
+  height: 100%;
+  width: 100%;
+  padding: 50px 0;
+  position: fixed;
+  opacity: 0;
+  visibility: hidden;
+  text-align: center;
+  transition: opacity 0.2s ease-in-out;
+  z-index: 1001;
+}
+
+.menu-overlay.open {
+  opacity: 1;
+  visibility: visible;
+  transition-delay: 0.03s;
+}
+
+.menu-overlay a {
+  color: #fff;
+  font-weight: 600;
+  font-size: 1.5em;
+  padding: 2%;
+  display: inline-block;
+}
