@@ -1,0 +1,10 @@
+{
+  "name": "teamastra",
+  "version": "1.0.0",
+  "description": "Website for Team Astra",
+  "main": "index.js",
+  "repository": "https://github.com/ceadoor/teamastracea.in.git",
+  "author": "abhijithvijayan <34790378+abhijithvijayan@users.noreply.github.com>",
+  "license": "MIT",
+  "private": true
+}
