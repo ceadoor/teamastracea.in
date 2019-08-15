@@ -12,29 +12,23 @@
 <p align="center">https://teamastracea.netlify.com/</p>
 <br>
 
-## 🚀 Quick Start
+---
 
-#### 1. Fork this repository
+</div>
 
-#### 2. Clone the fork to your local machine
+## To get started
 
-```
-git clone https://github.com/USERNAME/teamastracea.in .
-```
+### [Webpack](https://webpack.js.org/) requires [Node.js LTS](https://nodejs.org/en/download/) and [yarn](https://yarnpkg.com/en/docs/install) as package manager for the development.
 
-#### 3. Make the necessary changes
+## Contributing
 
-#### 4. Add, Commit and Push your changes
+Thank you for your interest in supporting us in development. Here are some of the many ways to contribute.
 
-```
-git add .
-git commit -m "commit_message_here"
-git push origin master
-```
+- Check out our [contributing guide](CONTRIBUTING.md)
+- Issues? Create a regular issue [here](https://github.com/ceadoor/teamastracea.in/issues/new)
 
-#### 5. Submit a Pull Request to this repository
+For starters, there are some open issues with the [#for-new-contributors](https://github.com/ceadoor/teamastracea.in/issues?q=is%3Aissue+is%3Aopen+label%3Afor-new-contributors) tag which are ideal for starting to contribute. They are all relatively easy to get started with.
 
-<hr />
 ## 🖤 Show your support
 
 Give a ⭐ if this you find this project helpful!
