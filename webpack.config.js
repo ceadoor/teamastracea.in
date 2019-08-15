@@ -25,6 +25,7 @@ module.exports = (env, options) => {
             rules: [
                 {
                     test: /\.scss$/,
+                    exclude: /(old_src)/,
                     use: [
                         options.mode !== 'production' ? 'style-loader' : MiniCssExtractPlugin.loader,
                         'css-loader',
@@ -41,6 +42,7 @@ module.exports = (env, options) => {
                 },
                 {
                     test: /\.(png|jpe?g|gif|svg)$/,
+                    exclude: /(old_src)/,
                     use: [
                         {
                             loader: 'file-loader',
@@ -53,6 +55,7 @@ module.exports = (env, options) => {
                 },
                 {
                     test: /\.(html)$/,
+                    exclude: /(old_src)/,
                     use: {
                         loader: 'html-srcsets-loader',
                         options: {
@@ -62,7 +65,7 @@ module.exports = (env, options) => {
                 },
                 {
                     test: /\.js$/,
-                    exclude: /(node_modules|bower_components)/,
+                    exclude: /(node_modules|bower_components|old_src)/,
                     use: {
                         loader: 'babel-loader',
                     },
