@@ -16,7 +16,7 @@
     />
   </head>
 
-  <body>
+  <body class="no-overflow">
     <!--[if lt IE 7]>
       <p class="browsehappy">
         You are using an <strong>outdated</strong> browser. Please
@@ -24,22 +24,14 @@
       </p>
     <![endif]-->
 
-    <main id="content">
+    <main id="wrapper">
       <section id="home">
-        <div class="container">
-          <div class="row pt-5">
-            <div class="col-md-12 text-center">
-              <h1>Hello World :)</h1>
-              <img
-                data-toggle="tooltip"
-                data-placement="bottom"
-                title="JQuery Works :)"
-                class="img-fluid pt-20"
-                alt="img"
-                src="assets/250x250.png"
-              />
-            </div>
-          </div>
+        <div class="fluid__container">
+            <canvas id="fluid__canvas"></canvas>
+        </div>
+        <div>
+            <p>Hi</p>
+        </div>
         </div>
       </section>
 

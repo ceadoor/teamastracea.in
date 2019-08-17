@@ -8,7 +8,7 @@
   "private": true,
   "main": "index.js",
   "scripts": {
-    "build": "webpack  --mode=production",
+    "build": "webpack --mode=production",
     "watch": "webpack --progress --watch  --mode=development",
     "dev": "webpack-dev-server --open  --mode=development"
   },
