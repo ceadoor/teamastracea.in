@@ -1,7 +1,18 @@
+/** Vendors */
+
 @import "~normalize.css/normalize";
 @import "~bootstrap/scss/bootstrap";
 
+/** Project Rules */
+
 @import "base/fonts";
-@import "base/variables";
-@import "base/components";
+@import "utils/variables";
+@import "utils/components";
 @import "base/reset";
+
+/** import other sass files here */
+
+@import "layout/header";
+@import "layout/footer";
+
+@import "pages/home";
