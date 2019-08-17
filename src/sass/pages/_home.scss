@@ -1,7 +1,7 @@
 #wrapper {
   position: relative;
   #home {
-    height: 90vh;
+    height: 100vh;
 
     .fluid__container {
       position: absolute;
@@ -43,25 +43,6 @@
             // opacity: 0;
           }
         }
-      }
-    }
-  }
-}
-
-#home__footer--nav {
-  padding-top: 20px;
-  position: relative;
-  // opacity: 0;
-  ul {
-    display: flex;
-    justify-content: space-around;
-    width: 100%;
-    li {
-      // font-family: caviar;
-      a {
-        color: $white;
-        outline: none;
-        cursor: pointer;
       }
     }
   }
