@@ -9,7 +9,7 @@
 #### 2. Clone the fork to your local machine
 
 ```
-git clone https://github.com/ceadoor/teamastracea.in.git
+git clone https://github.com/USERNAME/teamastracea.in.git
 ```
 
 #### 3. Switch to the directory
