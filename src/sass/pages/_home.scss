@@ -1,149 +1,6 @@
-#home__header {
-  nav {
-    .navbar__toggler {
-      position: absolute;
-      top: 20px;
-      left: 20px;
-      height: 46px;
-      width: 46px;
-
-      &.open {
-        .navbar__toggler--circle {
-          transform: scale(60);
-        }
-      }
-
-      &--circle {
-        background-color: #000;
-        width: 100%;
-        height: 100%;
-        position: absolute;
-        border-radius: 50%;
-        transition: all 0.5s cubic-bezier(0.19, 1, 0.22, 1);
-        z-index: 2;
-      }
-
-      &:hover {
-        .navbar__toggler--circle {
-          transform: scale(1.5);
-        }
-      }
-
-      &--link {
-        width: 100%;
-        height: 100%;
-        position: absolute;
-        z-index: 4;
-
-        .toggler__icon {
-          position: absolute;
-          width: 20px;
-          height: 14px;
-          margin: auto;
-          left: 0;
-          top: 0;
-          right: 0;
-          bottom: 1px;
-
-          &--line {
-            background-color: #fff;
-            height: 2px;
-            width: 100%;
-            border-radius: 2px;
-            position: absolute;
-            left: 0;
-            transition: all 0.25s cubic-bezier(0.175, 0.885, 0.32, 1.275);
-          }
-
-          .icon__line--1 {
-            top: 0;
-          }
-          .icon__line--2 {
-            top: 0;
-            bottom: 0;
-            margin: auto;
-          }
-          .icon__line--3 {
-            bottom: 0;
-          }
-        }
-      }
-
-      &.open {
-        .icon__line--1 {
-          transform: translateY(7px) translateY(-50%) rotate(-135deg);
-        }
-        .icon__line--2 {
-          opacity: 0;
-        }
-        .icon__line--3 {
-          transform: translateY(-7px) translateY(50%) rotate(135deg);
-        }
-      }
-    }
-
-    .navbar__overlay--menu {
-      background-color: #000;
-      color: #fff;
-      height: 100%;
-      width: 100%;
-      padding: 50px 0;
-      position: fixed;
-      opacity: 0;
-      visibility: hidden;
-      text-align: center;
-      transition: opacity 0.2s ease-in-out;
-      z-index: 3;
-
-      &.open {
-        opacity: 1;
-        visibility: visible;
-        transition-delay: 0.03s;
-      }
-
-      .navbar__overlay--wrapper {
-        // position: absolute;
-        // bottom: 0;
-        // right: 0;
-        // font-family: caviar;
-        width: 100%;
-        display: flex;
-        justify-content: center;
-        padding: 30px;
-        z-index: 1;
-
-        ul {
-          li {
-            img {
-              height: 30px;
-              width: auto;
-            }
-          }
-        }
-
-        a {
-          color: #fff;
-          font-weight: 600;
-          font-size: 1.5em;
-          padding: 2%;
-          display: inline-block;
-        }
-
-        .social__icon {
-          padding: 10px 20px !important;
-          font-size: 1em !important;
-          align-items: center;
-          &:not(:hover) {
-            filter: grayscale(100);
-          }
-        }
-      }
-    }
-  }
-}
-
 #wrapper {
   position: relative;
+
   #home {
     height: 100vh;
 
@@ -176,7 +33,7 @@
           text-align: center;
 
           img {
-            width: 500px;
+            width: 150px;
             height: auto;
           }
 
@@ -185,6 +42,33 @@
             margin-top: 10px;
             letter-spacing: 0.3em;
             // opacity: 0;
+          }
+
+          @media screen and (max-width: $screenXxsMax) {
+            p {
+              font-size: 15px;
+            }
+          }
+
+          @media screen and (min-width: $screenXsMin) {
+            img {
+              width: 300px;
+            }
+            p {
+              font-size: 20px;
+            }
+          }
+
+          @media screen and (min-width: $screenSmMin) {
+            img {
+              width: 500px;
+            }
+          }
+
+          @media screen and (min-width: $screenMdMin) {
+            p {
+              font-size: 25px;
+            }
           }
         }
       }
