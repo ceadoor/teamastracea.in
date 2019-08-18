@@ -2,7 +2,7 @@ import 'bootstrap';
 import './sass/main.scss';
 
 // animation library
-import './assets/js/fluidAnimation';
+// import './assets/js/fluidAnimation';
 
 // JQuery
 $(document).ready(() => {
